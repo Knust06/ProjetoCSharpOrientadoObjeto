@@ -2,22 +2,22 @@
 //App de musica que precisa ter name / artist / duration / available
 
 Music music1 = new Music();
-music1.name = "Máscaras";
-music1.artist = "Shiny_sz";
-music1.duration = 280;
-music1.WriteAvailable(true);
-Console.WriteLine(music1.ReadAvailable());
+music1.Name = "Máscaras";
+music1.Artist = "Shiny_sz";
+music1.Duration = 280;
+music1.Available = true;
+Console.WriteLine(music1.Showcase);
 
 
 
 //Console.WriteLine($"Nome da música {musica1}")It is show for default the type of object when you dont define.
 
 Music music2 = new Music();
-music2.name = "Chainsaw Man";
-music2.artist = "VMZ";
-music2.duration = 300;
-music2.WriteAvailable(false);
-Console.WriteLine(music2.ReadAvailable());
+music2.Name = "Chainsaw Man";
+music2.Artist = "VMZ";
+music2.Duration = 300;
+music2.Available = false;
+Console.WriteLine(music2.Showcase);
 
 music1.ShowTechnicalForm();
 music2.ShowTechnicalForm();

@@ -1,19 +1,30 @@
 ﻿class Music
 {
-    public string name;
-    public string artist;
-    public int duration;
-    private bool available;
+    public string Name { get; set; } //Ctrl + r make the rename in ALL files that uses this name
+    public string Artist { get; set; }
+    public int Duration { get; set; }
+    public bool Available { get; set; }
+    public string Showcase 
+    { 
+        get
+        {
+            return $"The music {Name} was created by the artist {Artist}.";
+        }
+    } 
+    
+    
+    //prop + Tab complete like ! in VS Code for HTML
 
-    public void WriteAvailable(bool value)
-    {
-        available = value;
-    }
 
-    public bool ReadAvailable()
-    {
-        return available;
-    }
+    // public void WriteAvailable(bool value) //(SET) Have an operation of writting 
+    // {
+    //     available = value;
+    // }
+
+    // public bool ReadAvailable() //(GET) Have an operation of reading 
+    // {
+    //     return available;
+    // }
 
     // This was just a test for studies, please ignore
     //public bool CheckIsAvailable(bool vale)
@@ -29,13 +40,12 @@
     //
     //}
 
-
     public void ShowTechnicalForm()
     {
-        Console.WriteLine($"Name: {name}");
-        Console.WriteLine($"Artist: {artist}");
-        Console.WriteLine($"Duration: {duration}");        
-        if (available)
+        Console.WriteLine($"Name: {Name}");
+        Console.WriteLine($"Artist: {Artist}");
+        Console.WriteLine($"Duration: {Duration}");        
+        if (Available)
         {
             Console.WriteLine("Available in the plan");
         } 
