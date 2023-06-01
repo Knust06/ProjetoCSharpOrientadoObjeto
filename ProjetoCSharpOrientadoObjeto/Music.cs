@@ -4,15 +4,10 @@
     public string Artist { get; set; }
     public int Duration { get; set; }
     public bool Available { get; set; }
-    public string Showcase 
-    { 
-        get
-        {
-            return $"The music {Name} was created by the artist {Artist}.";
-        }
-    } 
-    
-    
+    public string Showcase => $"The music {Name} was created by the artist {Artist}.";
+
+
+
     //prop + Tab complete like ! in VS Code for HTML
 
 
