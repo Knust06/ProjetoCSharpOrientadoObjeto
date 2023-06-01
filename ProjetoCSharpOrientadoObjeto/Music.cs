@@ -3,7 +3,32 @@
     public string name;
     public string artist;
     public int duration;
-    public bool available;
+    private bool available;
+
+    public void WriteAvailable(bool value)
+    {
+        available = value;
+    }
+
+    public bool ReadAvailable()
+    {
+        return available;
+    }
+
+    // This was just a test for studies, please ignore
+    //public bool CheckIsAvailable(bool vale)
+    //{
+    //    if (available) { 
+    //        available = vale;
+    //    }
+    //    else
+    //    {
+    //        available = vale;
+    //    }
+    //    return vale;
+    //
+    //}
+
 
     public void ShowTechnicalForm()
     {
