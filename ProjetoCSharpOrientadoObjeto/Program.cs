@@ -1,26 +1,18 @@
-﻿// Beginning of the studies about object in c#
-//App de musica que precisa ter name / artist / duration / available
+﻿Album albumOfShawn = new Album();
+albumOfShawn.Name = "Illuminate";
 
 Music music1 = new Music();
-music1.Name = "Máscaras";
-music1.Artist = "Shiny_sz";
-music1.Duration = 280;
-music1.Available = true;
-Console.WriteLine(music1.Showcase);
-
-
-
-//Console.WriteLine($"Nome da música {musica1}")It is show for default the type of object when you dont define.
+music1.Name = "Mercy";
+music1.Duration = 190;
 
 Music music2 = new Music();
-music2.Name = "Chainsaw Man";
-music2.Artist = "VMZ";
-music2.Duration = 300;
-music2.Available = false;
-Console.WriteLine(music2.Showcase);
+music2.Name = "There is nothing holding me back";
+music2.Duration = 200;
 
-music1.ShowTechnicalForm();
-music2.ShowTechnicalForm();
+albumOfShawn.AddMusic(music1);
+albumOfShawn.AddMusic(music2);
+
+albumOfShawn.ShowAlbumMusics();
 
 
 
