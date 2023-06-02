@@ -6,7 +6,8 @@
     public bool Available { get; set; }
     public string Showcase => $"The music {Name} was created by the artist {Artist}.";
 
-
+    //Fields/Atributes/Variable only store a value
+    //Property define how can acess and change this value
 
     //prop + Tab complete like ! in VS Code for HTML
 
