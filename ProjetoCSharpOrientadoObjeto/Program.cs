@@ -1,18 +1,26 @@
-﻿Album albumOfShawn = new Album();
-albumOfShawn.Name = "Illuminate";
+﻿Banda Shaw_Mendes = new Banda("Shaw_Mendes");
 
-Music music1 = new Music();
-music1.Name = "Mercy";
-music1.Duration = 190;
+Album albumOfShawn = new Album("Illuminate");
 
-Music music2 = new Music();
-music2.Name = "There is nothing holding me back";
-music2.Duration = 200;
+Music music1 = new Music(Shaw_Mendes, "Mercy")
+{
+    Duration = 190,
+    Available = true
+};
+Music music2 = new Music(Shaw_Mendes, "There is nothing holding me back")
+{
+    Duration = 300,
+    Available = true
+};
 
 albumOfShawn.AddMusic(music1);
 albumOfShawn.AddMusic(music2);
 
-albumOfShawn.ShowAlbumMusics();
+
+//albumOfShawn.ShowAlbumMusics();
+
+Shaw_Mendes.AddAlbum(albumOfShawn);
+Shaw_Mendes.ShowDiscograph();
 
 
 

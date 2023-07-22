@@ -1,7 +1,13 @@
 ﻿class Music
 {
-    public string Name { get; set; } //Ctrl + r make the rename in ALL files that uses this name
-    public string Artist { get; set; }
+    public Music(Banda artist, string name)
+    {
+        Artist = artist;
+        Name = name;
+    }
+
+    public string Name { get; } //Ctrl + r make the rename in ALL files that uses this name
+    public Banda Artist { get; }
     public int Duration { get; set; }
     public bool Available { get; set; }
     public string Showcase => $"The music {Name} was created by the artist {Artist}.";
