@@ -45,7 +45,7 @@
     public void ShowTechnicalForm()
     {
         Console.WriteLine($"Name: {Name}");
-        Console.WriteLine($"Artist: {Artist}");
+        Console.WriteLine($"Artist: {Artist.Name}");
         Console.WriteLine($"Duration: {Duration}");        
         if (Available)
         {

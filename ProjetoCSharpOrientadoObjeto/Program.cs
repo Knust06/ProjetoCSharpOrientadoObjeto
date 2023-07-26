@@ -5,7 +5,7 @@ Album albumOfShawn = new Album("Illuminate");
 Music music1 = new Music(Shaw_Mendes, "Mercy")
 {
     Duration = 190,
-    Available = true
+    Available = false
 };
 Music music2 = new Music(Shaw_Mendes, "There is nothing holding me back")
 {
@@ -15,12 +15,12 @@ Music music2 = new Music(Shaw_Mendes, "There is nothing holding me back")
 
 albumOfShawn.AddMusic(music1);
 albumOfShawn.AddMusic(music2);
-
-
-//albumOfShawn.ShowAlbumMusics();
-
+albumOfShawn.ShowAlbumMusics();
 Shaw_Mendes.AddAlbum(albumOfShawn);
 Shaw_Mendes.ShowDiscograph();
+
+music1.ShowTechnicalForm();
+music2.ShowTechnicalForm();
 
 
 
